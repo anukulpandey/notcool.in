@@ -3,9 +3,12 @@
   "configurations": [
     {
       "name": "notcool",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4321"],
-      "port": 4321
+      "runtimeExecutable": "/Users/anukul/.nvm/versions/node/v22.13.0/bin/npx",
+      "runtimeArgs": ["next", "dev", "-p", "3111"],
+      "port": 3111,
+      "env": {
+        "PATH": "/Users/anukul/.nvm/versions/node/v22.13.0/bin:/usr/bin:/bin"
+      }
     }
   ]
 }

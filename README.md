@@ -14,29 +14,31 @@ A wall of internet experiments. Every subdomain is a separate fever dream.
 
 ## stack
 
-None. Handwritten HTML, CSS, and vanilla JS. No framework, no build step, no cookies, no analytics.
+- **Next.js 15** (App Router, fully static prerender) + **React 19** + **TypeScript**
+- **Tailwind CSS v4** (CSS-first `@theme`, no config file)
+- **framer-motion** — entrance choreography, scroll-linked parallax, magnetic buttons
+- **lenis** — smooth scrolling
+- **raw WebGL** — the hero aurora is a hand-written fragment shader (fbm simplex noise), no three.js
 
-The only tracking on the site is the pair of SVG eyeballs in the wordmark, which follow your cursor. They also blink, and they get bored and wander off if you stop moving.
+## the important features
 
-Other things in the ~30KB:
+- 👀 the "OO" in the wordmark are SVG eyes that follow your cursor, blink, and wander off when bored — this is the only tracking on the site
+- 🟢 the status dots on project cards are **real live pings** with latency, fired from your browser
+- 🖼️ project screenshots are real captures of the live apps, framed in browser chrome with scroll parallax
+- 📊 a bento "uncool dashboard": system status, privacy report (0 cookies), proof-of-uncool terminal
+- ✍️ a manifesto that lights up word-by-word as you scroll
+- 🪩 Konami code (`↑↑↓↓←→←→BA`) — or press the footer button that says not to
+- ♿ full `prefers-reduced-motion` support; `?noanim=1` skips all animation (used by headless screenshot tests)
 
-- interactive particle constellation (canvas, mouse-repulsion)
-- custom cursor with lerped trailing ring
-- 3D tilt + glare project cards with **real live status pings** to each subdomain
-- text scramble effects, scroll reveals, marquee, click sparks
-- coming-soon cards with CRT scanline static
-- a Konami code (`↑↑↓↓←→←→BA`), or press the button in the footer that says not to
-- full `prefers-reduced-motion` support
+Also: `curl -sI notcool.in | grep -i x-certified`
 
 ## run it
 
 ```sh
-python3 -m http.server 4321
-# open http://localhost:4321
+npm install
+npm run dev
 ```
-
-That's it. That's the build pipeline.
 
 ## deploy
 
-Pushed to `main` → deployed on Vercel → served at [notcool.in](https://notcool.in).
+`vercel deploy --prod` → served at [notcool.in](https://notcool.in).
