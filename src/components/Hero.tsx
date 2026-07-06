@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import Eyes from "./Eyes";
-import EyesInTheDark from "./EyesInTheDark";
 import Magnetic from "./Magnetic";
+import VoidGrid from "./VoidGrid";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -36,8 +36,8 @@ function Letters({
 export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-svh flex-col justify-center overflow-hidden">
-      {/* the void, and the things that live in it */}
-      <EyesInTheDark className="absolute inset-0 h-full w-full" />
+      {/* graph paper in the dark; your cursor is the flashlight */}
+      <VoidGrid className="absolute inset-0 h-full w-full" />
 
       <div className="relative mx-auto w-full max-w-[1400px] px-5 pb-28 pt-28 sm:px-8 lg:px-10">
         <motion.p

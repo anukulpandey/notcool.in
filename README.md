@@ -18,12 +18,12 @@ A wall of internet experiments. Every subdomain is a separate fever dream.
 - **Tailwind CSS v4** (CSS-first `@theme`, no config file)
 - **framer-motion** — entrance choreography, scroll-linked parallax, magnetic buttons
 - **lenis** — smooth scrolling
-- **canvas 2D** — the hero void is inhabited by hand-drawn eye-creatures, no libraries
+- **canvas 2D** — the hero's cursor-lit dot grid is ~100 lines of hand-rolled canvas, no libraries
 
 ## the important features
 
 - 👀 the "OO" in the wordmark are SVG eyes that follow your cursor, blink, and wander off when bored — this is the only tracking on the site
-- 🌑 the hero void is full of little glowing eye-creatures lurking at different depths: they watch your cursor, get scared if you chase them, and reappear somewhere darker. one very large, very dim pair occasionally opens deep in the background. don't worry about it
+- 🔦 the hero is a barely-there dot grid in the dark; your cursor is a soft flashlight over it (it drifts on its own when you go idle)
 - 🟢 the status dots on project cards are **real live pings** with latency, fired from your browser
 - 🖼️ project screenshots are real captures of the live apps, framed in browser chrome with scroll parallax
 - 📊 a bento "uncool dashboard": system status, privacy report (0 cookies), proof-of-uncool terminal
