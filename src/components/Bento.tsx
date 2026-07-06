@@ -111,7 +111,7 @@ export default function Bento() {
         <Card delay={0.2}>
           <p className="mb-3 font-mono text-[11px] tracking-[0.2em] text-fog">BUILT WITH</p>
           <div className="flex flex-wrap gap-2">
-            {["next 15", "react 19", "tailwind 4", "framer motion", "webgl", "lenis"].map((t) => (
+            {["next 15", "react 19", "tailwind 4", "framer motion", "canvas", "lenis"].map((t) => (
               <span
                 key={t}
                 className="rounded-full border border-line px-3 py-1 font-mono text-[11px] text-paper"
@@ -120,7 +120,7 @@ export default function Bento() {
               </span>
             ))}
           </div>
-          <p className="mt-4 text-sm text-fog">0 templates. 1 weekend. handmade shaders.</p>
+          <p className="mt-4 text-sm text-fog">0 templates. 1 weekend. handmade eyeballs.</p>
         </Card>
 
         {/* next drop */}

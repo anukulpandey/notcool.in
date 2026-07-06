@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import AuroraCanvas from "./AuroraCanvas";
 import Eyes from "./Eyes";
+import EyesInTheDark from "./EyesInTheDark";
 import Magnetic from "./Magnetic";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -36,10 +36,8 @@ function Letters({
 export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-svh flex-col justify-center overflow-hidden">
-      <AuroraCanvas className="absolute inset-0 h-full w-full" />
-      {/* fade the aurora into the void at the bottom + keep copy readable on the left */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-void" />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-void/70 via-void/15 to-transparent" />
+      {/* the void, and the things that live in it */}
+      <EyesInTheDark className="absolute inset-0 h-full w-full" />
 
       <div className="relative mx-auto w-full max-w-[1400px] px-5 pb-28 pt-28 sm:px-8 lg:px-10">
         <motion.p
