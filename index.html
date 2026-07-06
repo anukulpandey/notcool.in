@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>notcool.in — a wall of uncool experiments</title>
+  <meta name="description" content="A wall of internet experiments by Anukul Pandey. Every subdomain is a separate fever dream. Certified not cool since forever." />
+  <meta name="theme-color" content="#060607" />
+  <meta name="color-scheme" content="dark" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="notcool.in" />
+  <meta property="og:title" content="notcool.in — a wall of uncool experiments" />
+  <meta property="og:description" content="Every subdomain is a separate fever dream. Droppie, GateKeep, and more uncool things loading." />
+  <meta property="og:url" content="https://notcool.in" />
+  <meta property="og:image" content="https://notcool.in/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="notcool.in — a wall of uncool experiments" />
+  <meta name="twitter:description" content="Every subdomain is a separate fever dream. Droppie, GateKeep, and more uncool things loading." />
+  <meta name="twitter:image" content="https://notcool.in/og.png" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060607'/%3E%3Ccircle cx='22' cy='32' r='13' fill='%23f2f2ef'/%3E%3Ccircle cx='42' cy='32' r='13' fill='%23f2f2ef'/%3E%3Ccircle cx='25' cy='34' r='6' fill='%23060607'/%3E%3Ccircle cx='45' cy='34' r='6' fill='%23060607'/%3E%3Ccircle cx='27' cy='32' r='2' fill='%23c6ff3e'/%3E%3Ccircle cx='47' cy='32' r='2' fill='%23c6ff3e'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- boot splash -->
+  <div class="boot" id="boot" aria-hidden="true">
+    <div class="boot-inner">
+      <span class="boot-text" id="bootText">not loading…</span>
+      <span class="boot-bar"><span class="boot-fill"></span></span>
+    </div>
+  </div>
+
+  <!-- ambient layers -->
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" data-hover>
+      <span class="brand-mark" aria-hidden="true">
+        <span class="eye eye-mini"><svg viewBox="0 0 100 100"><circle class="eye-white" cx="50" cy="50" r="46"/><g class="pupil"><circle class="pupil-ball" cx="50" cy="50" r="22"/><circle class="pupil-glint" cx="42" cy="42" r="7"/></g></svg></span>
+        <span class="eye eye-mini"><svg viewBox="0 0 100 100"><circle class="eye-white" cx="50" cy="50" r="46"/><g class="pupil"><circle class="pupil-ball" cx="50" cy="50" r="22"/><circle class="pupil-glint" cx="42" cy="42" r="7"/></g></svg></span>
+      </span>
+      <span class="brand-name">notcool.in</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#wall" data-hover data-scramble>the wall</a>
+      <a href="#manifesto" data-hover data-scramble>manifesto</a>
+      <a href="https://github.com/anukulpandey" target="_blank" rel="noopener" data-hover data-scramble>github&nbsp;↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <p class="eyebrow reveal"><span class="tick"></span>~/anukul/experiments&nbsp;&nbsp;·&nbsp;&nbsp;0% cool&nbsp;&nbsp;·&nbsp;&nbsp;100% shipped</p>
+
+      <h1 class="wordmark" aria-label="not cool">
+        <span class="wm-line wm-outline">
+          <span class="wm-letter">N</span><span class="wm-letter">O</span><span class="wm-letter">T</span>
+        </span>
+        <span class="wm-line">
+          <span class="wm-letter">C</span><span class="eye eye-big wm-letter"><svg viewBox="0 0 100 100"><circle class="eye-white" cx="50" cy="50" r="46"/><g class="pupil"><circle class="pupil-ball" cx="50" cy="50" r="21"/><circle class="pupil-glint" cx="42" cy="42" r="7"/></g></svg></span><span class="eye eye-big wm-letter"><svg viewBox="0 0 100 100"><circle class="eye-white" cx="50" cy="50" r="46"/><g class="pupil"><circle class="pupil-ball" cx="50" cy="50" r="21"/><circle class="pupil-glint" cx="42" cy="42" r="7"/></g></svg></span><span class="wm-letter">L</span>
+        </span>
+      </h1>
+
+      <p class="hero-tag reveal">A wall of internet experiments by <a class="underline-squiggle" href="https://github.com/anukulpandey" target="_blank" rel="noopener" data-hover>Anukul Pandey</a>.<br/>
+      Every subdomain is a separate fever dream. None of them asked for permission to exist.</p>
+
+      <div class="hero-cta reveal">
+        <a class="btn btn-solid magnetic" href="#wall" data-hover><span>see the wall&nbsp;↓</span></a>
+        <a class="btn btn-ghost magnetic" href="https://github.com/anukulpandey/notcool.in" target="_blank" rel="noopener" data-hover><span>view source&nbsp;↗</span></a>
+      </div>
+
+      <div class="scroll-hint reveal" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-label">scroll, it gets weirder</span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack">
+        <span class="marquee-chunk">DROPPIE&nbsp;✦&nbsp;GATEKEEP&nbsp;✦&nbsp;MORE UNCOOL THINGS LOADING&nbsp;✦&nbsp;NO COOKIES&nbsp;✦&nbsp;NO FRAMEWORKS&nbsp;✦&nbsp;JUST VIBES&nbsp;✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ============ THE WALL ============ -->
+    <section class="wall" id="wall">
+      <span class="ghost-title" aria-hidden="true">THE&nbsp;WALL</span>
+      <div class="section-head reveal">
+        <span class="section-index">01</span>
+        <h2 data-scramble data-hover>the wall</h2>
+        <p class="section-sub">live experiments, each on its own subdomain. the dots are real — this page pings them while you read this.</p>
+      </div>
+
+      <div class="grid">
+
+        <!-- droppie -->
+        <a class="card card-droppie reveal" href="https://droppie.notcool.in" target="_blank" rel="noopener" data-ping="https://droppie.notcool.in" data-hover style="--card-accent:#fbbf24">
+          <div class="card-art" aria-hidden="true">
+            <svg viewBox="0 0 200 140" fill="none">
+              <path class="draw" d="M60 38 Q100 2 140 38" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path class="draw" d="M60 38 Q80 26 100 38 Q120 26 140 38" stroke="currentColor" stroke-width="2" opacity=".5"/>
+              <path d="M60 38 L92 84 M140 38 L108 84 M100 40 L100 84" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+              <g class="float">
+                <rect x="84" y="84" width="32" height="32" rx="9" stroke="currentColor" stroke-width="3"/>
+                <text x="100" y="107" text-anchor="middle" font-size="18" font-weight="bold" fill="currentColor">D</text>
+              </g>
+              <circle cx="40" cy="112" r="3" fill="currentColor" opacity=".5"/>
+              <circle cx="164" cy="96" r="4" fill="currentColor" opacity=".35"/>
+              <circle cx="152" cy="124" r="2.5" fill="currentColor" opacity=".6"/>
+            </svg>
+          </div>
+          <div class="card-status"><span class="dot"></span><span class="status-text">pinging…</span></div>
+          <h3 class="card-title">droppie</h3>
+          <p class="card-url">droppie.notcool.in</p>
+          <p class="card-desc">No-code Merkle airdrops on any EVM chain. Turn a CSV into a verifiable token drop — deployed straight from your wallet, claimable in one click.</p>
+          <div class="card-tags"><span>web3</span><span>airdrops</span><span>merkle</span></div>
+          <span class="card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <!-- gatekeep -->
+        <a class="card card-gatekeep reveal" href="https://gatekeep.notcool.in" target="_blank" rel="noopener" data-ping="https://gatekeep.notcool.in" data-hover style="--card-accent:#818cf8">
+          <div class="card-art" aria-hidden="true">
+            <svg viewBox="0 0 200 140" fill="none">
+              <path class="draw" d="M56 118 V44 Q56 28 72 28 H128 Q144 28 144 44 V118" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M56 62 H144" stroke="currentColor" stroke-width="1.5" opacity=".5"/>
+              <path d="M100 20 L112 25 V34 Q112 42 100 46 Q88 42 88 34 V25 Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path class="dash-flow" d="M20 92 H180" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 7" opacity=".6"/>
+              <g class="coin-slide">
+                <circle cx="0" cy="92" r="12" stroke="currentColor" stroke-width="3" fill="none"/>
+                <text x="0" y="97" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">$</text>
+              </g>
+            </svg>
+          </div>
+          <div class="card-status"><span class="dot"></span><span class="status-text">pinging…</span></div>
+          <h3 class="card-title">gatekeep</h3>
+          <p class="card-url">gatekeep.notcool.in</p>
+          <p class="card-desc">Stripe for AI agent API calls. Wraps any REST API in an x402 pay-per-call gate — agents pay per request in USDC. No API keys, no subscriptions.</p>
+          <div class="card-tags"><span>x402</span><span>ai agents</span><span>payments</span></div>
+          <span class="card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <!-- coming soon -->
+        <div class="card card-soon reveal" data-hover>
+          <div class="card-art card-art-static" aria-hidden="true"><span class="glyph">?</span></div>
+          <div class="card-status"><span class="dot dot-ghost"></span><span class="status-text">status: imaginary</span></div>
+          <h3 class="card-title">???</h3>
+          <p class="card-url">???.notcool.in</p>
+          <p class="card-desc">Currently a hallucination. It exists in a notes app, three napkins, and one very confident shower thought.</p>
+          <div class="card-tags"><span>soon™</span></div>
+        </div>
+
+        <!-- coming soon 2 -->
+        <div class="card card-soon reveal" data-hover>
+          <div class="card-art card-art-static" aria-hidden="true"><span class="glyph">?</span></div>
+          <div class="card-status"><span class="dot dot-ghost"></span><span class="status-text">status: compiling courage</span></div>
+          <h3 class="card-title">???</h3>
+          <p class="card-url">???.notcool.in</p>
+          <p class="card-desc">This slot is reserved for the next bad idea that refuses to leave. The wall always wins eventually.</p>
+          <div class="card-tags"><span>soon™</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto" id="manifesto">
+      <span class="ghost-title" aria-hidden="true">WHY</span>
+      <div class="section-head reveal">
+        <span class="section-index">02</span>
+        <h2 data-scramble data-hover>manifesto</h2>
+      </div>
+      <div class="manifesto-lines">
+        <p class="m-line reveal">cool is a <em>cage</em>.</p>
+        <p class="m-line reveal">shipping beats <em>posturing</em>, every single time.</p>
+        <p class="m-line reveal">every experiment gets a subdomain, a weekend,<br/>and <em>zero</em> market research.</p>
+        <p class="m-line reveal">if it breaks, it breaks <em>in public</em>.</p>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><span class="stat-num" id="statLive">–</span><span class="stat-label">subdomains alive</span></div>
+        <div class="stat"><span class="stat-num">0</span><span class="stat-label">cookies used</span></div>
+        <div class="stat"><span class="stat-num">NaN</span><span class="stat-label">coffees consumed</span></div>
+        <div class="stat"><span class="stat-num">∞</span><span class="stat-label">ideas in the queue</span></div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <p class="footer-kicker reveal">that's the wall. for now.</p>
+      <a class="footer-big reveal" href="https://github.com/anukulpandey" target="_blank" rel="noopener" data-hover data-scramble>stay&nbsp;uncool.</a>
+      <div class="footer-row reveal">
+        <a href="https://github.com/anukulpandey" target="_blank" rel="noopener" data-hover>github ↗</a>
+        <a href="https://github.com/anukulpandey/notcool.in" target="_blank" rel="noopener" data-hover>source of this page ↗</a>
+        <button class="linklike" id="discoBtn" data-hover type="button">do not press ✦</button>
+      </div>
+      <p class="footer-fine reveal">© <span id="year">2026</span> anukul pandey · built from scratch, no framework · no analytics, no cookies —
+        the only tracking here is the eyes, and they're tracking <span class="you">you</span> · <span class="konami-hint">↑↑↓↓←→←→BA</span></p>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
