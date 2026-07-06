@@ -103,8 +103,8 @@ export default function Footer() {
         </div>
         <p className="mx-auto mt-5 max-w-2xl font-mono text-[11px] leading-loose text-fog">
           © 2026 anukul pandey · handmade with next.js, eyeballs &amp; questionable priorities · no
-          cookies, no analytics — the only tracking here is the eyes, and they&apos;re tracking{" "}
-          <span className="text-acid">you</span> · <span>↑↑↓↓←→←→BA</span>
+          cookies — the tracking here is the eyes and one cookieless view counter, and they&apos;re
+          both watching <span className="text-acid">you</span> · <span>↑↑↓↓←→←→BA</span>
         </p>
       </div>
     </footer>

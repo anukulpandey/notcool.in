@@ -81,8 +81,8 @@ export default function Bento() {
           <p className="mb-4 font-mono text-[11px] tracking-[0.2em] text-fog">SURVEILLANCE DEPT.</p>
           <Eyes eyeClass="h-10 w-10" />
           <p className="mt-4 text-sm leading-relaxed text-fog">
-            The only analytics on this site. They follow your cursor, they blink, and they get
-            bored when you leave.
+            Head of analytics. They follow your cursor, they blink, and they get bored when you
+            leave. A cookieless counter files the paperwork.
           </p>
         </Card>
 
@@ -90,7 +90,7 @@ export default function Bento() {
         <Card delay={0.1}>
           <p className="mb-2 font-mono text-[11px] tracking-[0.2em] text-fog">PRIVACY REPORT</p>
           <p className="font-display text-7xl text-acid">0</p>
-          <p className="mt-2 text-sm text-fog">cookies · trackers · popups · newsletters</p>
+          <p className="mt-2 text-sm text-fog">cookies · popups · paywalls · newsletters</p>
         </Card>
 
         {/* terminal proof */}

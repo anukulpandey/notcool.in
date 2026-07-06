@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Archivo_Black, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Cursor from "@/components/Cursor";
@@ -100,6 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Disco />
           {children}
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );

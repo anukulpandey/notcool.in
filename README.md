@@ -22,7 +22,7 @@ A wall of internet experiments. Every subdomain is a separate fever dream.
 
 ## the important features
 
-- 👀 the "OO" in the wordmark are SVG eyes that follow your cursor, blink, and wander off when bored — this is the only tracking on the site
+- 👀 the "OO" in the wordmark are SVG eyes that follow your cursor, blink, and wander off when bored — the only other tracking is a cookieless view counter (Vercel Web Analytics)
 - 🔦 the hero is a barely-there dot grid in the dark; your cursor is a soft flashlight over it (it drifts on its own when you go idle)
 - 🟢 the status dots on project cards are **real live pings** with latency, fired from your browser
 - 🖼️ project screenshots are real captures of the live apps, framed in browser chrome with scroll parallax
