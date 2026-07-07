@@ -19,9 +19,10 @@ export default function Home() {
           items={[
             "DROPPIE",
             "GATEKEEP",
+            "SARAE",
             "MORE UNCOOL THINGS LOADING",
             "NO COOKIES",
-            "HANDMADE SHADERS",
+            "HANDMADE EYEBALLS",
             "JUST VIBES",
           ]}
         />

@@ -35,4 +35,16 @@ export const projects: Project[] = [
     accent: "#818cf8",
     screenshot: "/screens/gatekeep.png",
   },
+  {
+    slug: "sarae",
+    name: "sarae",
+    url: "https://sarae.notcool.in",
+    host: "sarae.notcool.in",
+    tagline: "Try any makeup before you buy it.",
+    description:
+      "Paste a lipstick, blush or foundation link from Nykaa, Sephora, Amazon or anywhere — Sarae's AI extracts the true pigment and renders it live on your face, in real time, entirely in your browser.",
+    tags: ["beauty tech", "AR try-on", "AI shade match"],
+    accent: "#ff2f8e",
+    screenshot: "/screens/sarae.png",
+  },
 ];
