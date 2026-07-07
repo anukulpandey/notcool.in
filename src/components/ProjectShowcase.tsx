@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import type { Project } from "@/lib/projects";
 import { useLivePing } from "@/lib/useLivePing";
+import LiveEmbed from "./LiveEmbed";
 import Magnetic from "./Magnetic";
 
 function StatusChip({ url }: { url: string }) {
@@ -156,15 +156,7 @@ export default function ProjectShowcase({
               </span>
             </div>
           </div>
-          <div className="relative aspect-[1440/900]">
-            <Image
-              src={project.screenshot}
-              alt={`screenshot of ${project.name} — ${project.tagline}`}
-              fill
-              sizes="(max-width: 1024px) 100vw, 58vw"
-              className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-            />
-          </div>
+          <LiveEmbed project={project} />
         </div>
       </motion.a>
     </div>
