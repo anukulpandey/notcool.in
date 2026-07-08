@@ -20,6 +20,7 @@ export default function Home() {
             "DROPPIE",
             "GATEKEEP",
             "TRYO",
+            "CODING JUNGLE",
             "MORE UNCOOL THINGS LOADING",
             "NO COOKIES",
             "HANDMADE EYEBALLS",

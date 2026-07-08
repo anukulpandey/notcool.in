@@ -47,4 +47,16 @@ export const projects: Project[] = [
     accent: "#e11d74",
     screenshot: "/screens/tryo.png",
   },
+  {
+    slug: "cj",
+    name: "coding jungle",
+    url: "https://cj.notcool.in",
+    host: "cj.notcool.in",
+    tagline: "Your hub for hacking, AI & tech.",
+    description:
+      "Bite-sized ethical hacking, cyber security, AI tools and tech hacks — the kind you actually remember. Educational content for learning and defending your own devices, from @coding_jungle_.",
+    tags: ["ethical hacking", "cyber security", "AI tools"],
+    accent: "#a855f7",
+    screenshot: "/screens/cj.png",
+  },
 ];
