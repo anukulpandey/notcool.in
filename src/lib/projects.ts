@@ -36,15 +36,15 @@ export const projects: Project[] = [
     screenshot: "/screens/gatekeep.png",
   },
   {
-    slug: "sarae",
-    name: "sarae",
-    url: "https://sarae.notcool.in",
-    host: "sarae.notcool.in",
+    slug: "tryo",
+    name: "tryo",
+    url: "https://tryo.notcool.in",
+    host: "tryo.notcool.in",
     tagline: "Try any makeup before you buy it.",
     description:
-      "Paste a lipstick, blush or foundation link from Nykaa, Sephora, Amazon or anywhere — Sarae's AI extracts the true pigment and renders it live on your face, in real time, entirely in your browser.",
+      "Paste a lipstick, blush or foundation link from Nykaa, Sephora, Amazon or anywhere — tryo's AI extracts the true pigment and renders it live on your face, in real time, entirely in your browser.",
     tags: ["beauty tech", "AR try-on", "AI shade match"],
-    accent: "#ff2f8e",
-    screenshot: "/screens/sarae.png",
+    accent: "#e11d74",
+    screenshot: "/screens/tryo.png",
   },
 ];

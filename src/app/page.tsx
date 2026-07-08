@@ -19,7 +19,7 @@ export default function Home() {
           items={[
             "DROPPIE",
             "GATEKEEP",
-            "SARAE",
+            "TRYO",
             "MORE UNCOOL THINGS LOADING",
             "NO COOKIES",
             "HANDMADE EYEBALLS",

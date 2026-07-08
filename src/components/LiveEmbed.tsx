@@ -15,7 +15,7 @@ const DESIGN_H = 900;
  *
  * - poster screenshot paints instantly (no layout shift, no blank frame)
  * - the iframe only mounts once the card nears the viewport (lazy — three
- *   full apps is a lot; sarae alone loads a face-mesh model)
+ *   full apps is a lot; tryo alone loads a face-mesh model)
  * - once loaded it cross-fades over the poster; if it's blocked or never
  *   loads, the poster stays — nothing breaks
  * - pointer-events are off so page-scroll stays smooth and the whole card
@@ -86,7 +86,7 @@ export default function LiveEmbed({ project }: { project: Project }) {
           title={`live preview of ${project.name}`}
           loading="lazy"
           // our own subdomains; allow-same-origin lets the apps run normally.
-          // no camera/mic in allow=… → sarae's try-on shows its idle state
+          // no camera/mic in allow=… → tryo's try-on shows its idle state
           sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
           referrerPolicy="no-referrer"
           tabIndex={-1}
