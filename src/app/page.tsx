@@ -21,6 +21,7 @@ export default function Home() {
             "GATEKEEP",
             "TRYO",
             "CODING JUNGLE",
+            "WA-SPAMMER",
             "MORE UNCOOL THINGS LOADING",
             "NO COOKIES",
             "HANDMADE EYEBALLS",
@@ -33,7 +34,7 @@ export default function Home() {
             index="01"
             kicker="THE WALL"
             title="the wall"
-            sub="live experiments, each on its own subdomain. the status dots are real — this page pings them while you read this."
+            sub="live experiments, each with its own corner of the internet. the status dots are real — this page pings them while you read this."
           />
           <div className="flex flex-col gap-36 pt-16 lg:gap-48">
             {projects.map((p, i) => (
