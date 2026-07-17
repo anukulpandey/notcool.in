@@ -71,4 +71,16 @@ export const projects: Project[] = [
     accent: "#25d366",
     screenshot: "/screens/wa-spammer.png",
   },
+  {
+    slug: "veilpay",
+    name: "veilpay",
+    url: "https://veilpay.notcool.in",
+    host: "veilpay.notcool.in",
+    tagline: "Payroll on-chain, salaries invisible.",
+    description:
+      "Pay your team in an encrypted stablecoin on Avalanche. Salary amounts are sealed with zk-SNARKs + ElGamal encryption and payslips ride encrypted inside the transaction — yet a designated auditor can still decrypt for compliance. Live on Fuji.",
+    tags: ["zk-SNARKs", "eERC", "avalanche"],
+    accent: "#ec4899",
+    screenshot: "/screens/veilpay.png",
+  },
 ];

@@ -22,6 +22,7 @@ export default function Home() {
             "TRYO",
             "CODING JUNGLE",
             "WA-SPAMMER",
+            "VEILPAY",
             "MORE UNCOOL THINGS LOADING",
             "NO COOKIES",
             "HANDMADE EYEBALLS",
