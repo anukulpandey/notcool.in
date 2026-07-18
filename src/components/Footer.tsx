@@ -106,6 +106,12 @@ export default function Footer() {
           cookies — the tracking here is the eyes and one cookieless view counter, and they&apos;re
           both watching <span className="text-acid">you</span> · <span>↑↑↓↓←→←→BA</span>
         </p>
+        <p className="mx-auto mt-4 max-w-2xl font-mono text-[10px] leading-loose text-fog/50">
+          A personal showcase of independent side projects. All third-party names, logos and
+          trademarks — brands, stores and protocols mentioned — belong to their respective owners
+          and are used for identification only; no affiliation, sponsorship or endorsement is
+          implied. Linked projects are the responsibility of their authors.
+        </p>
       </div>
     </footer>
   );
