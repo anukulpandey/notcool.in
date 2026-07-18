@@ -83,4 +83,16 @@ export const projects: Project[] = [
     accent: "#ec4899",
     screenshot: "/screens/veilpay.png",
   },
+  {
+    slug: "owlnighter",
+    name: "owlnighter",
+    url: "https://owlnighter.notcool.in",
+    host: "owlnighter.notcool.in",
+    tagline: "Close the lid. The owl stays up.",
+    description:
+      "A tiny pixel-owl menu bar app for macOS that keeps downloads downloading, builds building and servers serving — even with the lid shut. No Electron, no accounts, ~0.5 MB. He blinks. You can boop him.",
+    tags: ["macos", "menu bar", "native app"],
+    accent: "#2563eb",
+    screenshot: "/screens/owlnighter.png",
+  },
 ];
