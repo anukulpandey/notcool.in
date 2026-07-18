@@ -61,13 +61,13 @@ export const projects: Project[] = [
   },
   {
     slug: "wa-spammer",
-    name: "wa-spammer",
+    name: "wa-repeater",
     url: "https://anukulpandey.github.io/wa-spammer/?msg=hello&count=10&delay=600",
     host: "anukulpandey.github.io/wa-spammer",
-    tagline: "One console line, N WhatsApp messages.",
+    tagline: "Test repeated sends on your own account.",
     description:
-      "Type a message, a count and a delay — it generates a one-line JavaScript snippet you paste into WhatsApp Web's DevTools to fire the same message N times. The page sends nothing itself; it just writes the code. Certifiably uncool.",
-    tags: ["dev toy", "console snippet", "whatsapp web"],
+      "An educational demo: enter a message, a count and a delay, and it generates a one-line console snippet for testing repeated sends against your own WhatsApp Web chats. The page sends nothing itself — it just writes the code for you to run on your own account.",
+    tags: ["dev toy", "console snippet", "educational"],
     accent: "#25d366",
     screenshot: "/screens/wa-spammer.png",
   },

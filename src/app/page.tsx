@@ -21,7 +21,7 @@ export default function Home() {
             "GATEKEEP",
             "TRYO",
             "CODING JUNGLE",
-            "WA-SPAMMER",
+            "WA-REPEATER",
             "VEILPAY",
             "MORE UNCOOL THINGS LOADING",
             "NO COOKIES",
