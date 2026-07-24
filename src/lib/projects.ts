@@ -95,4 +95,16 @@ export const projects: Project[] = [
     accent: "#2563eb",
     screenshot: "/screens/owlnighter.png",
   },
+  {
+    slug: "kleos",
+    name: "kleos",
+    url: "https://kleos.notcool.in",
+    host: "kleos.notcool.in",
+    tagline: "The long way home.",
+    description:
+      "A dark mythological action-platformer inspired by Homer's Odyssey. Ten winters of war are over — one cursed king must carve a road home through the gods of Olympus. Join the waitlist.",
+    tags: ["game", "action-platformer", "waitlist"],
+    accent: "#5eead4",
+    screenshot: "/screens/kleos.png",
+  },
 ];

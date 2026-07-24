@@ -24,6 +24,7 @@ export default function Home() {
             "WA-REPEATER",
             "VEILPAY",
             "OWLNIGHTER",
+            "KLEOS",
             "MORE UNCOOL THINGS LOADING",
             "NO COOKIES",
             "HANDMADE EYEBALLS",
